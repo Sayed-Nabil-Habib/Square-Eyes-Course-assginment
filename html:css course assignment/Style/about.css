@@ -1,0 +1,124 @@
+body{
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+:root{
+--font-color:white;
+--mobile-menu-font-size:16px;
+--mobile-version-font-weight:200;
+--button-tex-color:black;
+--border-radius:8px 8px 8px 8px;
+--display-flex: flex column;
+
+}
+
+/*Header-style-start*/
+
+
+header{
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  height: 500px;
+  width: 100%;
+}
+nav{
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.header-logo{
+  width: 100%;
+}
+.mobile-logo img{
+  width:90px;
+  margin: auto;
+  display: flex;
+  padding-top:5px;
+}
+.logo-orginal{
+  display: none;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: auto;
+}
+
+.menu{
+  position: relative;
+}
+
+ul li a{
+  color: var(--font-color);
+  padding: 10px;
+  font-weight: 100;
+  font-size: var(--mobile-menu-font-size);
+  text-decoration: none;
+}
+
+.submenu{
+  position: absolute;
+  color: var(--font-color);
+  font-weight: 100;
+  width: 140px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  line-height: 3;
+  cursor: pointer;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+.main{
+  color: var(--font-color);
+  max-width: 800px;
+  margin: auto;
+}
+.btn{
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+@media screen and (min-width: 800px) {
+  
+  .navigation{
+    max-height: 100px;
+    background-color: white;
+  }
+
+  nav ul li{
+    margin-bottom: 20px;
+  }
+  
+  nav ul li a{
+    color: black;
+  
+  }
+  header{
+    max-width: 1920px;
+    margin: auto;
+  }
+  .container{
+    max-width: 920px;
+    margin: auto;
+  }
+  .submenu{
+    background-color: white;
+  }
+  .logo-white{
+    display: none;
+  }
+  .logo-orginal{
+    display: block;
+  }
